@@ -119,15 +119,13 @@ class GeometricFigure {
 }
 
 class Triangle extends GeometricFigure {
-    constructor(sideOne, sideTwo, sideThree) {
+    constructor(sideOne, height) {
         super();
         this.sideOne = sideOne;
-        this.sideTwo = sideTwo;
-        this.sideThree = sideThree;
+        this.height = height;
     }
     getArea() {
-        let halfPerimeter = (this.sideOne + this.sideTwo + this.sideThree) / 2;
-        return (halfPerimeter * (halfPerimeter - this.sideOne) * (halfPerimeter - this.sideTwo) * (halfPerimeter - this.sideThree)) ** (1 / 2);
+        return (this.sideOne*this.height)/2;
     }
 }
 
