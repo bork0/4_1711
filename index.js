@@ -129,7 +129,7 @@ class Triangle extends GeometricFigure {
     }
 }
 
-let triangle = new Triangle(15,20,25); // to see whether it works
+let triangle = new Triangle(15,20); // to see whether it works
 
 class Square extends GeometricFigure {
     constructor(sideOne) {
